@@ -8,8 +8,8 @@ public class App {
         HelloWorld bean =
                 (HelloWorld) applicationContext.getBean("helloworld");
         HelloWorld bean1 =  applicationContext.getBean("helloworld", HelloWorld.class);
-        Cat cat = applicationContext.getBean("catBean", Cat.class);
-        Cat cat1 = applicationContext.getBean("catBean", Cat.class);
+        Cat cat = applicationContext.getBean("cat", Cat.class);
+        Cat cat1 = applicationContext.getBean("cat", Cat.class);
         System.out.println("Сравнение 2 пар бинов по ссылке, HelloWorld " + bean.equals(bean1));
         System.out.println("Сравнение 2 пар бинов по ссылке, Cat " + cat.equals(cat1));
         System.out.println(bean.getMessage());
